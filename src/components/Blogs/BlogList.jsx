@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
-import Scroll from './Scroll'
+import Scroll from '../commonComponent/Scroll'
 
 export default function BlogList(props) {
 
     const [list, setList] = useState(props?.value)
     console.log('props?.value', props?.value)
+
+
+   
+
+
 
     return (
         <>
@@ -12,9 +17,8 @@ export default function BlogList(props) {
             {
 
                 list?.map((resp) => {
-                    { console.log(">>>>>>>>>>>>>>>", resp?.type) }
-                    return (
-                        <div class="col-lg-4 col-12">
+                     return (
+                        (resp.type==="Design" || resp.type==="Customer" || resp.type==="Development") ? <div class="col-lg-4 col-12">
                             <div class="blog-card">
                                 <div class="blog-img">
                                     <img src={resp.image} alt="" />
@@ -49,7 +53,7 @@ export default function BlogList(props) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> : <></>
 
 
                     )

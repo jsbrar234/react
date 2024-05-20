@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import BlogList from './BlogList'
-import Navbar from './Navbar'
-import Scroll from './Scroll'
+import Navbar from '../commonComponent/Navbar'
+import Scroll from '../commonComponent/Scroll'
 
 
 const arr = [{

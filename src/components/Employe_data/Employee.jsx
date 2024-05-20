@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../Navbar'
-import Scroll from '../Scroll'
+import Navbar from '../commonComponent/Navbar'
+import Scroll from '../commonComponent/Scroll'
 import Employee_list from './Employee_list'
 
 const emp = [{

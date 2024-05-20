@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -35,9 +36,12 @@ export default function Navbar() {
                     </div>
                     <div class="col-lg-3">
                         <div class="links">
-                            <a href="">v18.2.0</a>
-                            <a href=""><i class="bi bi-translate"></i> Languages</a>
-                            <a href="">Github <i class="bi bi-box-arrow-up-right"></i></a>
+                        <ul>
+                            <li>v18.2.0</li>
+                            <li><i class="bi bi-translate"></i> Login</li>
+                           
+                            <li><Link class="nav-bar-links" to="/formik">Sign Up</Link></li>
+                        </ul>
                         </div>
                     </div>
                 </div>

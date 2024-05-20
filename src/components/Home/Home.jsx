@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Scroll from './Scroll'
+import Navbar from '../commonComponent/Navbar'
+import Scroll from '../commonComponent/Scroll'
 
 export default function home() {
     return (

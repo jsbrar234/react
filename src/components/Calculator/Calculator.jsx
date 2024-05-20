@@ -1,10 +1,10 @@
 import React, { useReducer } from 'react'
-import Navbar from '../Navbar'
-import Scroll from '../Scroll'
+import Navbar from '../commonComponent/Navbar'
+import Scroll from '../commonComponent/Scroll'
 import Cal_logic from './Cal_logic'
 
 export default function Calculator() {
-    const initialState = {x:3 , y: 2, result:""}
+    const initialState = {x:3 , y: 2, result: "" }
     const [state, dispatch] = useReducer(Cal_logic, initialState)
     
     return (

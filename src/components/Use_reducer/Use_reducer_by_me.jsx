@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
-import Navbar from '../Navbar'
-import Scroll from '../Scroll'
+import Navbar from '../commonComponent/Navbar'
+import Scroll from '../commonComponent/Scroll'
 import { Common_reducer_by_me } from './Common_reducer_by_me'
 
 export default function Use_reducer_by_me() {

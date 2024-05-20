@@ -1,8 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Scroll from './Scroll'
 
-export default function Hello() {
+export default function Post_api_formik() {
   return (
     <>
       <Navbar />

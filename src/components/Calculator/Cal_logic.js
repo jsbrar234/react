@@ -1,14 +1,14 @@
 import React from 'react'
 
 export default function Cal_logic(state, action) {
-
+    console.log("state", state)
+    
     switch (action.type) {
         case '+':
-            
+           
             return {
-                result: state.x + state.y
+                result: state.x + state.y,
             }
-            
             break;
         case '-':
             return {
@@ -25,7 +25,7 @@ export default function Cal_logic(state, action) {
         case '/':
             return {
                 result: state.x / state.y
-            }            
+            }
 
             break;
         default:

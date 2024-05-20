@@ -1,11 +1,9 @@
 import React, { useState, createContext } from 'react'
-import Navbar from '../Navbar'
-import Scroll from '../Scroll'
+import Navbar from '../commonComponent/Navbar'
+import Scroll from '../commonComponent/Scroll'
 import Use_context_2 from './Use_context_2';
 
-
 export const UserContext = createContext();
-
 export default function use_context() {
     const [user, setUser] = useState("Jesse Hall");
     return (
